@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Alexis Villar Collantes</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef2f6;
+      color: #243247;
+      line-height: 1.6;
+    }
+
+    .cv {
+      max-width: 1000px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px #14233b15;
+    }
+
+    aside {
+      background: #14233b;
+      color: white;
+      padding: 40px 30px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      display: grid;
+      place-items: center;
+      border-radius: 24px;
+      background: #2dd4bf;
+      color: #14233b;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 30px;
+      line-height: 1.2;
+      margin: 0 0 14px;
+    }
+
+    aside h2 {
+      font-size: 15px;
+      color: #2dd4bf;
+      margin-top: 32px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    aside p, aside a {
+      font-size: 14px;
+      color: #dbe4f0;
+      overflow-wrap: anywhere;
+    }
+
+    a { text-underline-offset: 4px; }
+
+    main { padding: 40px; }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .label {
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #0f766e;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 12px 18px;
+      background: #14233b;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover { background: #0f766e; }
+    button:focus-visible { outline: 3px solid #2dd4bf; }
+
+    section { margin-bottom: 32px; }
+
+    main h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 { margin: 0 0 8px; }
+    .card p { margin: 0; color: #526176; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #e6f7f4;
+      color: #0f766e;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    footer {
+      color: #64748b;
+      font-size: 12px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 700px) {
+      .cv {
+        grid-template-columns: 1fr;
+        margin: 16px;
+        border-radius: 18px;
+      }
+
+      aside, main { padding: 28px; }
+      .top { flex-wrap: wrap; }
+    }
+
+    @media print {
+      body { background: white; }
+
+      .cv {
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        grid-template-columns: 260px 1fr;
+      }
+
+      aside {
+        background: white;
+        color: #14233b;
+        border-right: 1px solid #ddd;
+      }
+
+      aside p, aside a { color: #243247; }
+      button { display: none; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cv">
+    <aside>
+      <div class="avatar" aria-hidden="true">AV</div>
+
+      <h1>Alexis Villar Collantes</h1>
+      <p>Estudiante · Portafolio académico</p>
+
+      <h2>Contacto</h2>
+      <p>
+        <a href="mailto:alexis.villar@tecsup.edu.pe">
+          alexis.villar@tecsup.edu.pe
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/Dikey2"
+           target="_blank" rel="noopener noreferrer">
+          github.com/Dikey2
+        </a>
+      </p>
+
+      <h2>Intereses</h2>
+      <p>Desarrollo web<br>Programación<br>Despliegue de aplicaciones</p>
+    </aside>
+
+    <main>
+      <div class="top">
+        <span class="label">CURRÍCULUM WEB</span>
+        <button type="button" onclick="window.print()">
+          Imprimir / PDF
+        </button>
+      </div>
+
+      <section>
+        <h2>Sobre mí</h2>
+        <!-- Personaliza este párrafo con información real. -->
+        <p>
+          Me interesa aprender a crear aplicaciones web y comprender
+          cómo publicarlas en internet. En este portafolio presento
+          las tecnologías y los proyectos que estoy trabajando
+          durante mi formación.
+        </p>
+      </section>
+
+      <section>
+        <h2>Formación</h2>
+        <div class="card">
+          <h3>Tecsup</h3>
+          <p>Formación académica en curso.</p>
+          <!-- Agrega aquí tu carrera y ciclo. -->
+        </div>
+      </section>
+
+      <section>
+        <h2>Tecnologías en aprendizaje</h2>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Git y GitHub</span>
+          <span class="tag">Render</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Proyectos académicos</h2>
+
+        <div class="card">
+          <h3>Servidor web con Node.js</h3>
+          <p>
+            Aplicación que responde a solicitudes HTTP, utiliza
+            variables de entorno y está desplegada en Render.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Currículum web</h3>
+          <p>
+            Página con diseño adaptable a distintos tamaños de
+            pantalla y opción para imprimir o guardar como PDF.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        Alexis Villar Collantes · Portafolio académico 2026
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

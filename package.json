@@ -1,0 +1,12 @@
+{
+  "name": "cv-alexis",
+  "version": "1.0.0",
+  "description": "Currículum web de Alexis Villar Collantes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Alexis Villar Collantes",
+  "license": "MIT",
+  "private": true
+}
